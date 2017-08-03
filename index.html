@@ -6,20 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>My first Vue app</title>
   <link href="css/exo-vuejs.css" type="text/css" rel="stylesheet" />
+  <!-- <script type="text/javascript" src="js/exo-vuejs.js"></script> -->
   <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
   <div id="app">
-    {{ message }}
+    <p>{{ message }}</p>
   </div>
 
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        message: 'Hello Vue !'
-      }
-    })
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue.js!'
+    }
+  })
   </script>
+
 </body>
 </html>
