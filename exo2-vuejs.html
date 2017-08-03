@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My second Vue app</title>
+  <link href="css/exo2-vuejs.css" type="text/css" rel="stylesheet" />
+  <!-- <script type="text/javascript" src="js/exo-vuejs.js"></script> -->
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app-2">
+    <span v-bind:title="message">
+      Passez votre souris sur moi pendant quelques secondes
+      pour voir mon titre lié dynamiquement !
+    </span>
+  </div>
+<script>
+  var app2 = new Vue({
+    el: '#app-2',
+    data: {
+      message: 'J\'apprends vuejs depuis ' + new Date()
+    }
+  })
+</script>
+</body>
+</html>
